@@ -1,0 +1,27 @@
+[project]
+name = "t-test"
+version = "0.1.0"
+description = "Using paired t-test and CV to compare ML models."
+readme = "README.md"
+authors = [
+    { name = "Daniel Jensen", email = "jensendaniel0144@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "catboost>=1.2.10",
+    "dotenv>=0.9.9",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.15.0",
+    "xgboost>=3.4.1",
+]
+
+[project.scripts]
+t-test = "t_test:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
